@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milcamboo</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FLMRKNBT3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6FLMRKNBT3');
+    </script>
+
+    <style>
+        #mountain {
+            border-radius: 30%;
+            opacity: 80%;
+        }
+
+        #title {
+            font-style: italic;
+            color: cadetblue;
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            border-bottom: 10px solid green;
+            padding: 20px;
+        }
+
+        h1 a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        @media all and (min-width: 480px) {
+            body {
+                background-color: cornflowerblue;
+            }
+
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            ol {
+                border-right: 10px solid greenyellow;
+                margin-top: 0;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body onload="console.log('Welcome to my home page!');">
+    <h1 id="title"><a href="index.html">WWW</a></h1>
+
+    <img id="mountain" src="mountain.jpg" width="200" height="200">
+    <div id="container">
+        <ol>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html" id="css">CSS</a></li>
+            <li><a href="js.html" id="javascript">JAVASCRIPT</a></li>
+        </ol>
+
+        <div>
+            <h2>Welcome</h2>
+            Hello, WEB!!
+        </div>
+    </div>
+    <!-- <p>ctrl + shift + p = cmd pallete -> wrapper Emmet: Wrap with Abbreviation</p> -->
+    <!-- <div id="haha">
+        <table>
+            <tr>
+                <td>haha</td>
+            </tr>
+        </table>
+    </div> -->
+    <!-- <p>lorem + tab</p> -->
+
+
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-ccyukdwoog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+</body>
+
+</html>
